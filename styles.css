@@ -318,5 +318,78 @@ h2, h3 {
 .nav-links li a:hover {
   color: #ffd700;
 }
+/* Navigation Responsiveness */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 0;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+/* Profile Section Responsive Fix */
+@media (max-width: 768px) {
+  .profile_intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile_intro img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Skills section fixes */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Section Padding Responsive */
+@media (max-width: 600px) {
+  section {
+    padding: 20px 10px;
+  }
+}
 
 

@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; /* Optional: text color change on hover */
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+ .profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #0d6efd;
+  box-shadow: 0 0 20px #0d6efd, 0 0 40px #6ea8fe;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  
+  .profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #0d6efd;
+}
+
+.profile_intro{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* Skill Stickers */
+#java, #python, #cpp, #db, #web, #dsa {
+  display: inline-block;
+  background-color: #e6f0ff;
+  color: #0d6efd;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 280px;
+  max-width: 90vw;
+}
+
+#java:hover, #python:hover, #cpp:hover, #db:hover, #web:hover, #dsa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#java img, #python img, #cpp img, #db img, #web img, #dsa img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Container styling if needed */
+.skill-sticker ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #java, #python, #cpp, #db, #web, #dsa {
+    font-size: 0.9rem;
+    padding: 12px;
+    width: 100%;
+  }
+
+  #java img, #python img, #cpp img, #db img, #web img, #dsa img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Project Section Stickers */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-sticker {
+  background-color: #f0f7ff;
+  color: #0d6efd;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-sticker:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-sticker h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-sticker p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .project-sticker {
+    width: 90%;
+  }
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  section h2 {
+    color: #0d6efd;
+  }
+  /* contackt section */
+  .contact {
+  padding: 50px 20px;
+  background-color: #f4f9ff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  background-color: #e6f0ff;
+  color: #0d6efd;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #cce0ff;
+}
+
+  
+ /* Footer Section */
+.footer {
+  background-color: #16181a;
+  color: white;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+/* === Faded Black Theme & Letter Visibility Enhancements === */
+
+/* Base colors */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Header */
+header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Section background (for consistent faded black effect) */
+section, .contact {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+}
+
+/* Skill stickers */
+#java, #python, #cpp, #db, #web, #dsa {
+  background-color: #2a2a2a;
+  color: #90caf9;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Projects */
+.project-sticker {
+  background-color: #2b2b2b;
+  color: #b0d4ff;
+}
+
+/* Contact section */
+.contact {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.contact p {
+  color: #cfcfcf;
+}
+
+.contact-links a {
+  background-color: #292929;
+  color: #90caf9;
+}
+
+.contact-links a:hover {
+  background-color: #3c3c3c;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #d0d0d0;
+}
+
+/* Headings */
+h2, h3 {
+  color: #90caf9;
+}
+
+/* Profile Pic Border */
+.profile-pic {
+  border: 5px solid #90caf9;
+  box-shadow: 0 0 20px #90caf9, 0 0 40px #4c9cff;
+}
+
+/* Navigation links */
+.nav-links li a {
+  color: #f1f1f1;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+

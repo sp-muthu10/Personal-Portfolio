@@ -7,56 +7,20 @@ body {
     color: #333;
   }
   
- header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 5; /* ensure it's above main content */
-}
-/* Hide menu icon on large screens */
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-}
-
-/* Hide the checkbox itself */
-.menu-toggle {
-  display: none;
-}
-
-/* Responsive nav changes */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    text-align: right;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #1f1f1f;
-    padding: 10px 0;
-    width: 100%;
-    position: static;
-    z-index: 10;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
+  header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px 0;
     text-align: center;
   }
-
-  .menu-toggle:checked + .menu-icon + nav .nav-links {
-    display: flex;
-  }
+  .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
-
-
 
 .nav-links li a {
   text-decoration: none;
@@ -427,5 +391,3 @@ h2, h3 {
     padding: 20px 10px;
   }
 }
-
-
